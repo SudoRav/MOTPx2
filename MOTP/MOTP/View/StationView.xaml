@@ -68,7 +68,7 @@
                 Margin="0,4,0,0"/>
 
         <Button x:Name="BTN_Add"
-                Command="{Binding AddCommand}"
+                Click="BTN_Add_Click"
                 Style="{StaticResource BtnApp}"
                 FontSize="14"
                 Content="Добавить"
