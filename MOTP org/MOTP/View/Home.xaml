@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="MOTP.View.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:MOTP.View"
+             mc:Ignorable="d"
+             d:DesignHeight="600"
+             d:DesignWidth="1400"
+             Style="{StaticResource Page_Style}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="240"/>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Style="{StaticResource BtnApp}"
+                Content="123"
+                Margin="0,8,0,0" HorizontalAlignment="Center" Width="380" Height="36" Grid.Row="7" />
+
+        <TextBox x:Name="tba" Text="HUB-10_L47518 " Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Пломба" Grid.Row="6"/>
+
+        <CheckBox x:Name="CB_Autoweb" Style="{DynamicResource CheckBoxApp}" Content="Авто открытие браузера?" Margin="10,0,10,0" VerticalAlignment="Center" Height="24" IsChecked="True" RenderTransformOrigin="0.617,0.805" Loaded="CB_Autoweb_Loaded" Click="CB_Autoweb_Click"/>
+        <CheckBox x:Name="CB_AddDubl" Style="{DynamicResource CheckBoxApp}" Content="Добавлять дубликаты?" Margin="10,0,10,0" Grid.Row="1" VerticalAlignment="Center" Height="24" IsChecked="True" RenderTransformOrigin="0.617,0.805" Click="CB_AddDubl_Click" Loaded="CB_AddDubl_Loaded"/>
+
+
+        <TextBox x:Name="TB_PattenNaclPal" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Паттерн наклейкаи паллета" Grid.Column="2" LostFocus="TB_PattenNaclPal_LostFocus" Loaded="TB_PattenNaclPal_Loaded"/>
+        <TextBox x:Name="TB_PattenPlmbPal" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Паттерн пломбы паллета" Grid.Column="3" LostFocus="TB_PattenPlmbPal_LostFocus" Loaded="TB_PattenPlmbPal_Loaded" Grid.ColumnSpan="2" IsEnabled="False"/>
+        <CheckBox x:Name="CB_PPPal" Style="{DynamicResource CheckBoxApp}" Margin="10,0,10,0" VerticalAlignment="Center" Height="30" IsChecked="False" RenderTransformOrigin="0.805,0.805" Grid.Column="3" Loaded="CB_PPPal_Loaded" LostFocus="CB_PPPal_LostFocus" />
+
+        <TextBox x:Name="TB_PattenNaclGM" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Паттерн наклейкаи ГМа" Grid.Column="2" Grid.Row="1" LostFocus="TB_PattenNaclGM_LostFocus" Loaded="TB_PattenNaclGM_Loaded"/>
+        <TextBox x:Name="TB_PattenPlmbGM" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Паттерн пломбы ГМа" Grid.Column="3" Grid.Row="1" LostFocus="TB_PattenPlmbGM_LostFocus" Loaded="TB_PattenPlmbGM_Loaded" Grid.ColumnSpan="2" IsEnabled="False"/>
+        <CheckBox x:Name="CB_PPGM" Style="{DynamicResource CheckBoxApp}" Margin="10,0,10,0" VerticalAlignment="Center" Height="30" IsChecked="False" RenderTransformOrigin="0.805,0.805" Grid.Column="3" Grid.Row="1" Loaded="CB_PPGM_Loaded" LostFocus="CB_PPGM_LostFocus"/>
+
+        <TextBox x:Name="TB_PattenNaclMesh" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="11,0,10,0" ToolTip="Паттерн наклейкаи мешка" Grid.Column="2" Grid.Row="2" LostFocus="TB_PattenNaclMesh_LostFocus" Loaded="TB_PattenNaclMesh_Loaded"/>
+        <TextBox x:Name="TB_PattenPlmbMesh" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Паттерн пломбы мешка" Grid.Column="3" Grid.Row="2" LostFocus="TB_PattenPlmbMesh_LostFocus" Loaded="TB_PattenPlmbMesh_Loaded" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="CB_PPMesh" Style="{DynamicResource CheckBoxApp}" Margin="10,0,0,0" VerticalAlignment="Center" Height="30" IsChecked="True" RenderTransformOrigin="0.805,0.805" Grid.Column="3" Grid.Row="2" Loaded="CB_PPMesh_Loaded" LostFocus="CB_PPMesh_LostFocus" HorizontalAlignment="Left" Width="20" />
+
+        <TextBox x:Name="TB_PattenNaclCont" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,11,0" ToolTip="Паттерн наклейкаи контейнера" Grid.Column="2" Grid.Row="3" LostFocus="TB_PattenNaclCont_LostFocus" Loaded="TB_PattenNaclCont_Loaded"/>
+        <TextBox x:Name="TB_PattenPlmbCont" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Пломба" Grid.Column="3" Grid.Row="3" LostFocus="TB_PattenPlmbCont_LostFocus" Loaded="TB_PattenPlmbCont_Loaded" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="CB_PPCont" Style="{DynamicResource CheckBoxApp}" Margin="10,0,10,0" VerticalAlignment="Center" Height="30" IsChecked="True" RenderTransformOrigin="0.805,0.805" Grid.Column="3" Grid.Row="3" Loaded="CB_PPCont_Loaded" LostFocus="CB_PPCont_LostFocus"/>
+
+        <TextBox x:Name="TB_PattenNaclSave" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="9,0,11,0" ToolTip="Паттерн наклейкаи сейфпакета" Grid.Column="2" Grid.Row="4" LostFocus="TB_PattenNaclSave_LostFocus" Loaded="TB_PattenNaclSave_Loaded"/>
+        <TextBox x:Name="TB_PattenPlmbSave" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Паттерн пломбы сейфпакета" Grid.Column="3" Grid.Row="4" LostFocus="TB_PattenPlmbSave_LostFocus" Loaded="TB_PattenPlmbSave_Loaded" Grid.ColumnSpan="2" IsEnabled="False"/>
+        <CheckBox x:Name="CB_PPSave" Style="{DynamicResource CheckBoxApp}" Margin="10,0,10,0" VerticalAlignment="Center" Height="30" IsChecked="False" RenderTransformOrigin="0.805,0.805" Grid.Column="3" Grid.Row="4" Loaded="CB_PPSave_Loaded" LostFocus="CB_PPSave_LostFocus"/>
+
+        <TextBox x:Name="TB_PattenNaclZas" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="9,0,11,0" ToolTip="Паттерн наклейкаи засыла" Grid.Column="2" Grid.Row="5" LostFocus="TB_PattenNaclZas_LostFocus" Loaded="TB_PattenNaclZas_Loaded"/>
+        <TextBox x:Name="TB_PattenPlmbZas" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Паттерн пломбы засыла" Grid.Column="3" Grid.Row="5" LostFocus="TB_PattenPlmbZas_LostFocus" Loaded="TB_PattenPlmbZas_Loaded" Grid.ColumnSpan="2" IsEnabled="False"/>
+        <CheckBox x:Name="CB_PPZas" Style="{DynamicResource CheckBoxApp}" Margin="10,0,10,0" VerticalAlignment="Center" Height="30" IsChecked="False" RenderTransformOrigin="0.805,0.805" Grid.Column="3" Grid.Row="5" Loaded="CB_PPZas_Loaded" LostFocus="CB_PPZas_LostFocus"/>
+
+        <TextBox x:Name="TB_FIO" Text="ФИО" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="ФИО" Grid.Row="9" Grid.Column="1"/>
+        <TextBox x:Name="TB_Должность" Text="Должность" Style="{DynamicResource TextBoxApp}" Width="NaN" HorizontalAlignment="Stretch" Margin="10,0,10,0" ToolTip="Должность" Grid.Row="9"/>
+
+        <Button x:Name="BTN_DownloadImg" Style="{StaticResource BtnApp}"
+            Margin="10,0,0,0" HorizontalAlignment="Left" Width="460" Height="40" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="3" VerticalAlignment="Center" Click="BTN_DownloadImg_Click">
+            <Grid>
+                <Image x:Name="IMG_Types" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="428" Source="/Images/mass_types.png" StretchDirection="DownOnly"/>
+                <TextBlock Text="Скачать иображение" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Button>
+        <Button Style="{StaticResource BtnApp}"
+            Content="123"
+            Margin="0,8,0,0" HorizontalAlignment="Center" Width="380" Height="36" Grid.Row="7" />
+
+    </Grid>
+</UserControl>

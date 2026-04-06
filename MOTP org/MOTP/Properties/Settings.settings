@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MOTP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="autoweb" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="adddubl" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="patternNaclPal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^HUB-\d{2}_L\d{5}</Value>
+    </Setting>
+    <Setting Name="patternPlmbPal" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="patternNaclGM" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^HUB-\d{2}_L\d{5}</Value>
+    </Setting>
+    <Setting Name="patternPlmbGM" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="patternNaclMesh" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^HUB-\d{2}_L\d{5}</Value>
+    </Setting>
+    <Setting Name="patternPlmbMesh" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^\d{12}</Value>
+    </Setting>
+    <Setting Name="patternNaclCont" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^HUB-\d{2}_L\d{5}</Value>
+    </Setting>
+    <Setting Name="patternPlmbCont" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^\d{12}</Value>
+    </Setting>
+    <Setting Name="patternNaclSave" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="patternPlmbSave" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="patternNaclZas" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="patternPlmbZas" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PPpal" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PPgm" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PPmesh" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PPcont" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PPsave" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PPzas" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

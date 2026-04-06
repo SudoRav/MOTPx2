@@ -1,0 +1,86 @@
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP.csproj.AssemblyReference.cache
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\Styles\Button.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\Styles\Image.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\Styles\Page.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\Styles\Text.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MainWindow.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Details.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Home.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Report.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\App.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP_MarkupCompile.cache
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP_MarkupCompile.lref
+C:\Users\sudor\source\repos\MOTP\MOTP\bin\Debug\MOTP.exe.config
+C:\Users\sudor\source\repos\MOTP\MOTP\bin\Debug\MOTP.exe
+C:\Users\sudor\source\repos\MOTP\MOTP\bin\Debug\MOTP.pdb
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\App.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MainWindow.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\Utilities\DataTemplate.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Details.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Home.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Report.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP.g.resources
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP.Properties.Resources.resources
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP.csproj.GenerateResource.cache
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP.csproj.CoreCompileInputs.cache
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP.exe
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\MOTP.pdb
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Dop.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Dop.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Sett.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Sett.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Sharapovo.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Sharapovo.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Himki.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Himki.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Helkovskay.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Marta.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Odincovo.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Pererva.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Privolnay.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Puhkino.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Rybinovay.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Skladohnay.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Vehki.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\BUhunskay.g.cs
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\BUhunskay.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Helkovskay.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Marta.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Odincovo.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Pererva.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Privolnay.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Puhkino.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Rybinovay.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Skladohnay.baml
+C:\Users\sudor\source\repos\MOTP\MOTP\obj\Debug\View\Stations\Vehki.baml
+D:\MOTP — копия\MOTP\obj\Debug\MOTP.csproj.AssemblyReference.cache
+D:\MOTP — копия\MOTP\obj\Debug\MOTP.exe.config
+D:\MOTP — копия\MOTP\obj\Debug\Styles\Button.baml
+D:\MOTP — копия\MOTP\obj\Debug\Styles\Image.baml
+D:\MOTP — копия\MOTP\obj\Debug\Styles\Page.baml
+D:\MOTP — копия\MOTP\obj\Debug\Styles\Text.baml
+D:\MOTP — копия\MOTP\obj\Debug\MainWindow.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Details.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Dop.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Home.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Report.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Sett.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\BUhunskay.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Helkovskay.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Himki.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Marta.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Odincovo.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Pererva.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Privolnay.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Puhkino.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Rybinovay.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Sharapovo.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Skladohnay.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\View\Stations\Vehki.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\App.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\MOTP — копия\MOTP\obj\Debug\MOTP_MarkupCompile.cache
+D:\MOTP — копия\MOTP\obj\Debug\MOTP_MarkupCompile.lref
+D:\MOTP — копия\MOTP\obj\Debug\MOTP.exe
+D:\MOTP — копия\MOTP\obj\Debug\MOTP.pdb
