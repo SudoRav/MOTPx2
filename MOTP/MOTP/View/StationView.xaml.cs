@@ -17,6 +17,7 @@ namespace MOTP.View
     public partial class StationView : UserControl
     {
         private string _richReport = string.Empty;
+        private readonly Home _home = new Home();
 
         public StationView()
         {
@@ -27,14 +28,160 @@ namespace MOTP.View
 
         private void TBNacl_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter && DataContext is StationViewModel vm)
-                vm.AddEntryFromKeyboard();
+            TBNacl.Text = TBNacl.Text.Trim();
+
+            if (_home.SetType(e, TBNacl.Text, CBType))
+                return;
+
+            if (e.Key != Key.Enter)
+                return;
+
+            ProcessAddFromNacl();
         }
 
         private void TBPlmb_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter && DataContext is StationViewModel vm)
-                vm.AddPlombFromKeyboard();
+            if (e.Key == Key.Enter)
+                ProcessAddFromPlomb();
+        }
+
+        private void BTN_Add_Click(object sender, RoutedEventArgs e)
+        {
+            if (CBType.SelectedIndex == 2 || CBType.SelectedIndex == 3)
+            {
+                if (!string.IsNullOrWhiteSpace(TBPlmb.Text))
+                    ProcessAddFromPlomb();
+                else
+                    ProcessAddFromNacl();
+                return;
+            }
+
+            ProcessAddFromNacl();
+        }
+
+        private void ProcessAddFromNacl()
+        {
+            if (DataContext is not StationViewModel vm)
+                return;
+
+            if (!_home.FormStr(TBNacl, CBType.SelectedIndex, false))
+            {
+                System.Media.SystemSounds.Hand.Play();
+                _home.ClearEnter(TBNacl, TBPlmb);
+                return;
+            }
+
+            switch (CBType.SelectedIndex)
+            {
+                case 0:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listPal,
+                        TBNacl,
+                        TBPlmb,
+                        "паллет");
+                    break;
+                case 1:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listGM,
+                        TBNacl,
+                        TBPlmb,
+                        "гм");
+                    break;
+                case 4:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listSave,
+                        TBNacl,
+                        TBPlmb,
+                        "сейфпакет");
+                    break;
+                case 5:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listZas,
+                        TBNacl,
+                        TBPlmb,
+                        "засыл");
+                    break;
+                case 2:
+                case 3:
+                    TBPlmb.Focus();
+                    return;
+            }
+
+            vm.SyncCollectionsFromStation();
+        }
+
+        private void ProcessAddFromPlomb()
+        {
+            if (DataContext is not StationViewModel vm)
+                return;
+
+            TBPlmb.Text = TBPlmb.Text.Trim();
+
+            if (!_home.FormStr(TBPlmb, CBType.SelectedIndex, true))
+            {
+                System.Media.SystemSounds.Hand.Play();
+                _home.ClearEnter(TBNacl, TBPlmb);
+                return;
+            }
+
+            switch (CBType.SelectedIndex)
+            {
+                case 2:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listMesh,
+                        TBNacl,
+                        TBPlmb,
+                        "мешок");
+                    break;
+                case 3:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listCont,
+                        TBNacl,
+                        TBPlmb,
+                        "контейнер");
+                    break;
+                default:
+                    ProcessAddFromNacl();
+                    return;
+            }
+
+            vm.SyncCollectionsFromStation();
         }
 
         private void BTN_ClrMesh_Click(object sender, RoutedEventArgs e)
