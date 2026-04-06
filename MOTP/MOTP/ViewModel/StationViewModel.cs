@@ -124,7 +124,6 @@ namespace MOTP.ViewModel
             if (Station._listMesh != null) foreach (var o in Station._listMesh) MeshList.Add(o);
             if (Station._listCont != null) foreach (var o in Station._listCont) ContList.Add(o);
         }
-
         private void OpenSett() 
         {
             MessageBox.Show("настройки");

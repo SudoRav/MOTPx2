@@ -33,10 +33,74 @@ namespace MOTP.View
             if (_home.SetType(e, TBNacl.Text, CBType))
                 return;
 
-            if (e.Key != Key.Enter)
+            if (e.Key != Key.Enter || DataContext is not StationViewModel vm)
                 return;
 
-            ProcessAddFromNacl();
+            if (!_home.FormStr(TBNacl, CBType.SelectedIndex, false))
+            {
+                System.Media.SystemSounds.Hand.Play();
+                _home.ClearEnter(TBNacl, TBPlmb);
+                return;
+            }
+
+            switch (CBType.SelectedIndex)
+            {
+                case 0:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listPal,
+                        TBNacl,
+                        TBPlmb,
+                        "паллет");
+                    break;
+                case 1:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listGM,
+                        TBNacl,
+                        TBPlmb,
+                        "гм");
+                    break;
+                case 4:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listSave,
+                        TBNacl,
+                        TBPlmb,
+                        "сейфпакет");
+                    break;
+                case 5:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listZas,
+                        TBNacl,
+                        TBPlmb,
+                        "засыл");
+                    break;
+            }
+
+            vm.SyncCollectionsFromStation();
+            TBPlmb.Focus();
         }
 
         private void TBPlmb_KeyDown(object sender, KeyEventArgs e)
@@ -182,6 +246,25 @@ namespace MOTP.View
             }
 
             vm.SyncCollectionsFromStation();
+        }
+        
+
+        private void BTN_ClrPal_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is StationViewModel vm)
+            {
+                vm.PalList.Clear();
+                vm.PersistToStation();
+            }
+        }
+
+        private void BTN_ClrGM_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is StationViewModel vm)
+            {
+                vm.PalList.Clear();
+                vm.PersistToStation();
+            }
         }
 
         private void BTN_ClrMesh_Click(object sender, RoutedEventArgs e)

@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|c:\\users\\sudor\\source\\repos\\motpx2\\motp org\\motp\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|solutionrelative:motp\\view\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\motp\\view\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|solutionrelative:motp\\view\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\motp\\view\\stations\\buhunskay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|solutionrelative:motp\\view\\stations\\buhunskay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|c:\\users\\sudor\\source\\repos\\motpx2\\motp org\\motp\\view\\details.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|solutionrelative:motp\\view\\details.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -33,6 +21,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|c:\\users\\sudor\\source\\repos\\motpx2\\motp org\\motp\\view\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|solutionrelative:motp\\view\\report.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\motp\\view\\stations\\buhunskay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|solutionrelative:motp\\view\\stations\\buhunskay.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\motp\\view\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|solutionrelative:motp\\view\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{795E279B-9B2D-4613-BC8A-2B309B885D1A}|MOTP\\MOTP.csproj|C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\motp\\view\\stations\\buhunskay.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -111,18 +107,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Home.xaml",
-              "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Home.xaml",
-              "RelativeDocumentMoniker": "MOTP\\View\\Home.xaml",
-              "ToolTip": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Home.xaml",
-              "RelativeToolTip": "MOTP\\View\\Home.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-06T07:35:50.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Details.xaml",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Details.xaml",
               "RelativeDocumentMoniker": "MOTP\\View\\Details.xaml",
@@ -134,7 +118,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "Dop.xaml",
+              "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Dop.xaml",
+              "RelativeDocumentMoniker": "MOTP\\View\\Dop.xaml",
+              "ToolTip": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Dop.xaml",
+              "RelativeToolTip": "MOTP\\View\\Dop.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-06T07:35:29.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sett.xaml",
+              "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Sett.xaml",
+              "RelativeDocumentMoniker": "MOTP\\View\\Sett.xaml",
+              "ToolTip": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Sett.xaml",
+              "RelativeToolTip": "MOTP\\View\\Sett.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-04-06T07:35:27.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Report.xaml",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Report.xaml",
               "RelativeDocumentMoniker": "MOTP\\View\\Report.xaml",
@@ -146,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MOTP\\MainWindow.xaml.cs",
@@ -159,20 +167,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Home.xaml.cs",
               "RelativeDocumentMoniker": "MOTP\\View\\Home.xaml.cs",
               "ToolTip": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Home.xaml.cs",
               "RelativeToolTip": "MOTP\\View\\Home.xaml.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAADgv3MAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAADgv3EAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-31T02:15:46.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "BUhunskayVM.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\ViewModel\\BUhunskayVM.cs",
               "RelativeDocumentMoniker": "MOTP\\ViewModel\\BUhunskayVM.cs",
@@ -185,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\App.xaml",
               "RelativeDocumentMoniker": "MOTP\\App.xaml",
@@ -197,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MOTP\\MainWindow.xaml",
@@ -208,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "BUhunskay.xaml.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Stations\\BUhunskay.xaml.cs",
               "RelativeDocumentMoniker": "MOTP\\View\\Stations\\BUhunskay.xaml.cs",
@@ -221,31 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Sett.xaml",
-              "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Sett.xaml",
-              "RelativeDocumentMoniker": "MOTP\\View\\Sett.xaml",
-              "ToolTip": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Sett.xaml",
-              "RelativeToolTip": "MOTP\\View\\Sett.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-06T07:35:27.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dop.xaml",
-              "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Dop.xaml",
-              "RelativeDocumentMoniker": "MOTP\\View\\Dop.xaml",
-              "ToolTip": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Dop.xaml",
-              "RelativeToolTip": "MOTP\\View\\Dop.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-04-06T07:35:29.26Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\App.xaml.cs",
               "RelativeDocumentMoniker": "MOTP\\App.xaml.cs",
@@ -257,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "HelkovskayVM.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\ViewModel\\HelkovskayVM.cs",
               "RelativeDocumentMoniker": "MOTP\\ViewModel\\HelkovskayVM.cs",
@@ -270,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Helkovskay.xaml.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Stations\\Helkovskay.xaml.cs",
               "RelativeDocumentMoniker": "MOTP\\View\\Stations\\Helkovskay.xaml.cs",
@@ -282,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "BUhunskay.xaml",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\View\\Stations\\BUhunskay.xaml",
               "RelativeDocumentMoniker": "MOTP\\View\\Stations\\BUhunskay.xaml",
@@ -294,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "HomeVM.cs",
               "DocumentMoniker": "C:\\Users\\sudor\\source\\repos\\MOTPx2\\MOTP org\\MOTP\\ViewModel\\HomeVM.cs",
               "RelativeDocumentMoniker": "MOTP\\ViewModel\\HomeVM.cs",

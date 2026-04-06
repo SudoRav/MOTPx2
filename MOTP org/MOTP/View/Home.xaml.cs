@@ -14,7 +14,7 @@ using System.Text.RegularExpressions;
 using Microsoft.Win32;
 using System.IO;
 using System.Windows.Media.Imaging;
-using Spire.Xls;
+//using Spire.Xls;
 
 namespace MOTP.View
 {
@@ -504,9 +504,9 @@ namespace MOTP.View
 
             if (MessageBox.Show(warningline, "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.Yes)
             {
-                Workbook workbook = new Workbook();
+                //Workbook workbook = new Workbook();
 
-                Worksheet worksheet = workbook.Worksheets[0];
+                //Worksheet worksheet = workbook.Worksheets[0];
             }
         }
 
