@@ -112,6 +112,18 @@ namespace MOTP.ViewModel
             Station._listCont = ContList.ToList();
         }
 
+        public void SyncCollectionsFromStation()
+        {
+            PalList.Clear();
+            GMList.Clear();
+            MeshList.Clear();
+            ContList.Clear();
+
+            if (Station._listPal != null) foreach (var o in Station._listPal) PalList.Add(o);
+            if (Station._listGM != null) foreach (var o in Station._listGM) GMList.Add(o);
+            if (Station._listMesh != null) foreach (var o in Station._listMesh) MeshList.Add(o);
+            if (Station._listCont != null) foreach (var o in Station._listCont) ContList.Add(o);
+        }
         private void OpenSett() 
         {
             MessageBox.Show("настройки");

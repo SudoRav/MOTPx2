@@ -17,6 +17,7 @@ namespace MOTP.View
     public partial class StationView : UserControl
     {
         private string _richReport = string.Empty;
+        private readonly Home _home = new Home();
 
         public StationView()
         {
@@ -27,14 +28,104 @@ namespace MOTP.View
 
         private void TBNacl_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Enter && DataContext is StationViewModel vm)
-                vm.AddEntryFromKeyboard();
+            TBNacl.Text = TBNacl.Text.Trim();
+
+            if (_home.SetType(e, TBNacl.Text, CBType))
+                return;
+
+            if (e.Key != Key.Enter || DataContext is not StationViewModel vm)
+                return;
+
+            if (!_home.FormStr(TBNacl, CBType.SelectedIndex, false))
+            {
+                System.Media.SystemSounds.Hand.Play();
+                _home.ClearEnter(TBNacl, TBPlmb);
+                return;
+            }
+
+            switch (CBType.SelectedIndex)
+            {
+                case 0:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listPal,
+                        TBNacl,
+                        TBPlmb,
+                        "паллет");
+                    break;
+                case 1:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listGM,
+                        TBNacl,
+                        TBPlmb,
+                        "гм");
+                    break;
+                case 4:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listSave,
+                        TBNacl,
+                        TBPlmb,
+                        "сейфпакет");
+                    break;
+                case 5:
+                    _home.AddProd(
+                        vm.Station._listPal,
+                        vm.Station._listGM,
+                        vm.Station._listMesh,
+                        vm.Station._listCont,
+                        vm.Station._listSave,
+                        vm.Station._listZas,
+                        vm.Station._listZas,
+                        TBNacl,
+                        TBPlmb,
+                        "засыл");
+                    break;
+            }
+
+            vm.SyncCollectionsFromStation();
+            TBPlmb.Focus();
         }
 
         private void TBPlmb_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.Enter && DataContext is StationViewModel vm)
                 vm.AddPlombFromKeyboard();
+        }
+        
+
+        private void BTN_ClrPal_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is StationViewModel vm)
+            {
+                vm.PalList.Clear();
+                vm.PersistToStation();
+            }
+        }
+
+        private void BTN_ClrGM_Click(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is StationViewModel vm)
+            {
+                vm.PalList.Clear();
+                vm.PersistToStation();
+            }
         }
 
         private void BTN_ClrMesh_Click(object sender, RoutedEventArgs e)
