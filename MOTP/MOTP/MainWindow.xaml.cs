@@ -7,7 +7,7 @@ using System.Windows.Media;
 
 namespace MOTP
 {
-    //1
+    //2
     public partial class MainWindow : Window
     {
         static readonly string googleCientId = "...";
