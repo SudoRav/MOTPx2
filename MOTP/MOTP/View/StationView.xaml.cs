@@ -326,62 +326,54 @@ namespace MOTP.View
                 _richReport += "Паллеты:\n";
                 for (int i = 0; i < listPal.Count; i++)
                 {
-                    string[] str = listPal[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (str.Length >= 3)
-                        _richReport += $"{str[1]} {str[2]}\n";
+                    string formatted = FormatReportEntry(listPal[i]);
+                    if (!string.IsNullOrWhiteSpace(formatted))
+                        _richReport += $"{formatted}\n";
                 }
                 _richReport += "\n\n";
 
                 _richReport += "ГМы:\n";
                 for (int i = 0; i < listGM.Count; i++)
                 {
-                    string[] str = listGM[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (str.Length >= 3)
-                        _richReport += $"{str[1]} {str[2]}\n";
+                    string formatted = FormatReportEntry(listGM[i]);
+                    if (!string.IsNullOrWhiteSpace(formatted))
+                        _richReport += $"{formatted}\n";
                 }
                 _richReport += "\n\n";
 
                 _richReport += "Мешки:\n";
                 for (int i = 0; i < listMesh.Count; i++)
                 {
-                    string[] str = listMesh[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (str.Length >= 4)
-                        _richReport += $"{str[1]} {str[2]} {str[3]}\n";
-                    else if (str.Length >= 3)
-                        _richReport += $"{str[1]} {str[2]}\n";
+                    string formatted = FormatReportEntry(listMesh[i]);
+                    if (!string.IsNullOrWhiteSpace(formatted))
+                        _richReport += $"{formatted}\n";
                 }
                 _richReport += "\n\n";
 
                 _richReport += "Контейнеры:\n";
                 for (int i = 0; i < listCont.Count; i++)
                 {
-                    string[] str = listCont[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (str.Length >= 4)
-                        _richReport += $"{str[1]} {str[2]} {str[3]}\n";
-                    else if (str.Length >= 3)
-                        _richReport += $"{str[1]} {str[2]}\n";
+                    string formatted = FormatReportEntry(listCont[i]);
+                    if (!string.IsNullOrWhiteSpace(formatted))
+                        _richReport += $"{formatted}\n";
                 }
                 _richReport += "\n\n";
 
                 _richReport += "Сейфпакеты:\n";
                 for (int i = 0; i < listSave.Count; i++)
                 {
-                    string[] str = listSave[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (str.Length >= 4)
-                        _richReport += $"{str[1]} {str[2]} {str[3]}\n";
-                    else if (str.Length >= 3)
-                        _richReport += $"{str[1]} {str[2]}\n";
+                    string formatted = FormatReportEntry(listSave[i]);
+                    if (!string.IsNullOrWhiteSpace(formatted))
+                        _richReport += $"{formatted}\n";
                 }
                 _richReport += "\n\n";
 
                 _richReport += "Засылы:\n";
                 for (int i = 0; i < listZas.Count; i++)
                 {
-                    string[] str = listZas[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                    if (str.Length >= 4)
-                        _richReport += $"{str[1]} {str[2]} {str[3]}\n";
-                    else if (str.Length >= 3)
-                        _richReport += $"{str[1]} {str[2]}\n";
+                    string formatted = FormatReportEntry(listZas[i]);
+                    if (!string.IsNullOrWhiteSpace(formatted))
+                        _richReport += $"{formatted}\n";
                 }
                 _richReport += "\n\n";
 
@@ -407,6 +399,21 @@ namespace MOTP.View
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private static string FormatReportEntry(string rawEntry)
+        {
+            if (string.IsNullOrWhiteSpace(rawEntry))
+                return string.Empty;
+
+            string[] parts = rawEntry.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length == 0)
+                return string.Empty;
+
+            if (parts.Length == 1)
+                return parts[0];
+
+            return string.Join(" ", parts, 1, parts.Length - 1);
         }
 
         public void FormDoc(
